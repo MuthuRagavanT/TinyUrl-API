@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAngularApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200") // your Angular app
+            policy.WithOrigins("https://tiny-rul-api.azurewebsites.net") // your Angular app
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials(); // optional
