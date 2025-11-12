@@ -27,7 +27,7 @@ namespace TinyUrl_Api.Repositories
         {
             TinyUrlModel model = new TinyUrlModel();
             model.Code = GenerateShortCode();
-            model.ShortUrl = "https://localhost:7021/"+ model.Code;
+            model.ShortUrl = "https://tiny-rul-api.azurewebsites.net/" + model.Code;
             model.LongUrl = viewModel.originalUrl;
             model.IsPrivate = viewModel.IsPrivate;
             DataTable dataTable;
